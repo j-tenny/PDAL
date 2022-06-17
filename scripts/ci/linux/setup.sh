@@ -15,6 +15,7 @@ if [ "$BUILD_TYPE" == "fixed" ]; then
 
 else
 
+    conda install --yes --quiet gdal=3.4.1=py310h8172e47_6 python=3.10 abseil-cpp  -y
     conda install pdal --only-deps -y
 
 fi
